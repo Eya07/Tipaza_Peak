@@ -1,0 +1,416 @@
+\hypertarget{perso_8h}{}\section{perso.\+h File Reference}
+\label{perso_8h}\index{perso.\+h@{perso.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+image.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h\char`\"{}}\\*
+Include dependency graph for perso.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{perso_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbackground}{background}
+\begin{DoxyCompactList}\small\item\em struct for background \end{DoxyCompactList}\item 
+struct \hyperlink{structvie}{vie}
+\begin{DoxyCompactList}\small\item\em struct for life of hero \end{DoxyCompactList}\item 
+struct \hyperlink{structscore}{score}
+\begin{DoxyCompactList}\small\item\em struct for score of hero \end{DoxyCompactList}\item 
+struct \hyperlink{structpersonnage}{personnage}
+\begin{DoxyCompactList}\small\item\em struct for hero \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{perso_8h_a09f1cd4ab0356c6e8f1fae7ad5b5e1b7}{mapw}~6838
+\item 
+\#define \hyperlink{perso_8h_afc4a978b3c563d99156af79d4312b602}{maph}~613
+\item 
+\#define \hyperlink{perso_8h_a256fa45915e06d853830477e42cea383}{hero\+\_\+sprite\+\_\+W}~200
+\item 
+\#define \hyperlink{perso_8h_aa9d0b49e693cbe649a0dd7f6e9a5f37b}{hero\+\_\+sprite\+\_\+H}~300
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structvie}{vie} \hyperlink{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}{vie}
+\item 
+typedef struct \hyperlink{structscore}{score} \hyperlink{perso_8h_a1240ca29fa6f99334b17271ea026bc91}{score}
+\item 
+typedef struct \hyperlink{structpersonnage}{personnage} \hyperlink{perso_8h_a22ea6c21be7b6540d95f47b6ad40ffa6}{personnage}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpersonnage}{personnage} \hyperlink{perso_8h_aefdd3ed151582e68d8142d416f944def}{initperso} (\hyperlink{structpersonnage}{personnage} c)
+\begin{DoxyCompactList}\small\item\em to initialize hero \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_a4fcd9448740c67449649edb846515fae}{affichageperso} (\hyperlink{structpersonnage}{personnage} c, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to display hero \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_af81b9e13ff32af2582670fdd52ced258}{animperso} (\hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em to animate hero \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_a176ddce8a9e039b9acad0706a7cc5d5b}{freesurfaceperso} (\hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em to free memory from hero \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_a936a0790f87300c4d50a1fe7959875f5}{mouvement} (\hyperlink{structpersonnage}{personnage} $\ast$c)
+\item 
+void \hyperlink{perso_8h_a627e8dbcc77f69a29241e6dccf38d77d}{initialiser} (\hyperlink{structbackground}{background} $\ast$b)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_aeaaf5c82548f38656077b1b49ff8bac6}{scrolling\+\_\+gauche} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structbackground}{background} $\ast$b, \hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_aa9867b2212396203068e2ed65f182bbf}{evenement} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structbackground}{background} $\ast$b, int direction, \hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_adfeffe6a5ec91252946ce47e842d3ca7}{scrolling\+\_\+droit} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structbackground}{background} $\ast$b, \hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{perso_8h_a2e96662eb12911c08fa0bdab84e84b7f}{setup} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structbackground}{background} $\ast$b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bouabker Arij \begin{DoxyDate}{Date}
+Mai ,2020
+\end{DoxyDate}
+testing program for main character animation 
+
+\subsection{Macro Definition Documentation}
+\index{perso.\+h@{perso.\+h}!hero\+\_\+sprite\+\_\+H@{hero\+\_\+sprite\+\_\+H}}
+\index{hero\+\_\+sprite\+\_\+H@{hero\+\_\+sprite\+\_\+H}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{hero\+\_\+sprite\+\_\+H}{hero_sprite_H}}]{\setlength{\rightskip}{0pt plus 5cm}\#define hero\+\_\+sprite\+\_\+H~300}\hypertarget{perso_8h_aa9d0b49e693cbe649a0dd7f6e9a5f37b}{}\label{perso_8h_aa9d0b49e693cbe649a0dd7f6e9a5f37b}
+\index{perso.\+h@{perso.\+h}!hero\+\_\+sprite\+\_\+W@{hero\+\_\+sprite\+\_\+W}}
+\index{hero\+\_\+sprite\+\_\+W@{hero\+\_\+sprite\+\_\+W}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{hero\+\_\+sprite\+\_\+W}{hero_sprite_W}}]{\setlength{\rightskip}{0pt plus 5cm}\#define hero\+\_\+sprite\+\_\+W~200}\hypertarget{perso_8h_a256fa45915e06d853830477e42cea383}{}\label{perso_8h_a256fa45915e06d853830477e42cea383}
+\index{perso.\+h@{perso.\+h}!maph@{maph}}
+\index{maph@{maph}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{maph}{maph}}]{\setlength{\rightskip}{0pt plus 5cm}\#define maph~613}\hypertarget{perso_8h_afc4a978b3c563d99156af79d4312b602}{}\label{perso_8h_afc4a978b3c563d99156af79d4312b602}
+\index{perso.\+h@{perso.\+h}!mapw@{mapw}}
+\index{mapw@{mapw}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{mapw}{mapw}}]{\setlength{\rightskip}{0pt plus 5cm}\#define mapw~6838}\hypertarget{perso_8h_a09f1cd4ab0356c6e8f1fae7ad5b5e1b7}{}\label{perso_8h_a09f1cd4ab0356c6e8f1fae7ad5b5e1b7}
+
+
+\subsection{Typedef Documentation}
+\index{perso.\+h@{perso.\+h}!personnage@{personnage}}
+\index{personnage@{personnage}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{personnage}{personnage}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf personnage}  {\bf personnage}}\hypertarget{perso_8h_a22ea6c21be7b6540d95f47b6ad40ffa6}{}\label{perso_8h_a22ea6c21be7b6540d95f47b6ad40ffa6}
+\index{perso.\+h@{perso.\+h}!score@{score}}
+\index{score@{score}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{score}{score}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf score} {\bf score}}\hypertarget{perso_8h_a1240ca29fa6f99334b17271ea026bc91}{}\label{perso_8h_a1240ca29fa6f99334b17271ea026bc91}
+\index{perso.\+h@{perso.\+h}!vie@{vie}}
+\index{vie@{vie}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{vie}{vie}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf vie} {\bf vie}}\hypertarget{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}{}\label{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}
+
+
+\subsection{Function Documentation}
+\index{perso.\+h@{perso.\+h}!affichageperso@{affichageperso}}
+\index{affichageperso@{affichageperso}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{affichageperso(personnage c, S\+D\+L\+\_\+\+Surface $\ast$screen)}{affichageperso(personnage c, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void affichageperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_a4fcd9448740c67449649edb846515fae}{}\label{perso_8h_a4fcd9448740c67449649edb846515fae}
+
+
+to display hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+{\em screen} & the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+to display hero 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{perso_8h_a4fcd9448740c67449649edb846515fae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{perso_8h_a4fcd9448740c67449649edb846515fae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!animperso@{animperso}}
+\index{animperso@{animperso}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{animperso(personnage $\ast$c)}{animperso(personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void animperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_af81b9e13ff32af2582670fdd52ced258}{}\label{perso_8h_af81b9e13ff32af2582670fdd52ced258}
+
+
+to animate hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{perso_8h_af81b9e13ff32af2582670fdd52ced258_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!evenement@{evenement}}
+\index{evenement@{evenement}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{evenement(\+S\+D\+L\+\_\+\+Surface $\ast$screen, background $\ast$b, int direction, personnage $\ast$c)}{evenement(SDL_Surface *screen, background *b, int direction, personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void evenement (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf background} $\ast$}]{b, }
+\item[{int}]{direction, }
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_aa9867b2212396203068e2ed65f182bbf}{}\label{perso_8h_aa9867b2212396203068e2ed65f182bbf}
+
+
+
+
+ 
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{perso_8h_aa9867b2212396203068e2ed65f182bbf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{perso_8h_aa9867b2212396203068e2ed65f182bbf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!freesurfaceperso@{freesurfaceperso}}
+\index{freesurfaceperso@{freesurfaceperso}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{freesurfaceperso(personnage $\ast$c)}{freesurfaceperso(personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void freesurfaceperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_a176ddce8a9e039b9acad0706a7cc5d5b}{}\label{perso_8h_a176ddce8a9e039b9acad0706a7cc5d5b}
+
+
+to free memory from hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+to free memory from hero 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{perso_8h_a176ddce8a9e039b9acad0706a7cc5d5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{initialiser(background $\ast$b)}{initialiser(background *b)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser (
+\begin{DoxyParamCaption}
+\item[{{\bf background} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_a627e8dbcc77f69a29241e6dccf38d77d}{}\label{perso_8h_a627e8dbcc77f69a29241e6dccf38d77d}
+
+
+
+
+ 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{perso_8h_a627e8dbcc77f69a29241e6dccf38d77d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!initperso@{initperso}}
+\index{initperso@{initperso}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{initperso(personnage c)}{initperso(personnage c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf personnage} initperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_aefdd3ed151582e68d8142d416f944def}{}\label{perso_8h_aefdd3ed151582e68d8142d416f944def}
+
+
+to initialize hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+personnage 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{perso_8h_aefdd3ed151582e68d8142d416f944def_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{perso_8h_aefdd3ed151582e68d8142d416f944def_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!mouvement@{mouvement}}
+\index{mouvement@{mouvement}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{mouvement(personnage $\ast$c)}{mouvement(personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void mouvement (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_a936a0790f87300c4d50a1fe7959875f5}{}\label{perso_8h_a936a0790f87300c4d50a1fe7959875f5}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{perso_8h_a936a0790f87300c4d50a1fe7959875f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!scrolling\+\_\+droit@{scrolling\+\_\+droit}}
+\index{scrolling\+\_\+droit@{scrolling\+\_\+droit}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{scrolling\+\_\+droit(\+S\+D\+L\+\_\+\+Surface $\ast$screen, background $\ast$b, personnage $\ast$c)}{scrolling_droit(SDL_Surface *screen, background *b, personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void scrolling\+\_\+droit (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf background} $\ast$}]{b, }
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_adfeffe6a5ec91252946ce47e842d3ca7}{}\label{perso_8h_adfeffe6a5ec91252946ce47e842d3ca7}
+
+
+
+
+ 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{perso_8h_adfeffe6a5ec91252946ce47e842d3ca7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!scrolling\+\_\+gauche@{scrolling\+\_\+gauche}}
+\index{scrolling\+\_\+gauche@{scrolling\+\_\+gauche}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{scrolling\+\_\+gauche(\+S\+D\+L\+\_\+\+Surface $\ast$screen, background $\ast$b, personnage $\ast$c)}{scrolling_gauche(SDL_Surface *screen, background *b, personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void scrolling\+\_\+gauche (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf background} $\ast$}]{b, }
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_aeaaf5c82548f38656077b1b49ff8bac6}{}\label{perso_8h_aeaaf5c82548f38656077b1b49ff8bac6}
+
+
+
+
+ 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{perso_8h_aeaaf5c82548f38656077b1b49ff8bac6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{perso.\+h@{perso.\+h}!setup@{setup}}
+\index{setup@{setup}!perso.\+h@{perso.\+h}}
+\subsubsection[{\texorpdfstring{setup(\+S\+D\+L\+\_\+\+Surface $\ast$screen, background $\ast$b)}{setup(SDL_Surface *screen, background *b)}}]{\setlength{\rightskip}{0pt plus 5cm}void setup (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf background} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{perso_8h_a2e96662eb12911c08fa0bdab84e84b7f}{}\label{perso_8h_a2e96662eb12911c08fa0bdab84e84b7f}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{perso_8h_a2e96662eb12911c08fa0bdab84e84b7f_icgraph}
+\end{center}
+\end{figure}
+
+
